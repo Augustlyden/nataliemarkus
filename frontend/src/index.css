@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Parisienne&display=swap');
+
+:root {
+  --white: #FDFCF9;        /* varmvit bakgrund */
+  --green-light: #C9DCC9;  /* pastellgrön, ytor/sektioner */
+  --green-mid: #A9C5AE;    /* accent, linjer, ikoner */
+  --green-deep: #5E7A63;   /* text på ljus botten, rubriker */
+  --gold: #D4C5A3;         /* liten lyxig accent, t.ex. divider */
+  --text: #3A3A34;         /* brödtext, nästan svart men varmare */
+}
+
+h1, h2, .script {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+body, p {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
