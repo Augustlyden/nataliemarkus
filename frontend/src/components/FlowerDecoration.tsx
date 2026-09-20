@@ -1,7 +1,7 @@
 const FlowerDecoration = ({ className }: { className?: string }) => {
   return (
     <>
-      <svg className={className} stroke="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.0" width="600.000000pt" height="857.000000pt" viewBox="0 0 600.000000 857.000000" preserveAspectRatio="xMidYMid meet">
+      <svg className={className} stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 857" preserveAspectRatio="xMidYMid meet">
         <g transform="translate(0.000000,857.000000) scale(0.100000,-0.100000)" stroke="none">
           <path d="M1390 8123 c-15 -53 -49 -93 -79 -93 -11 0 -23 -4 -26 -10 -3 -6 4 -10 17 -10 49 0 98 -62 98 -125 0 -39 17 -30 24 13 8 54 45 105 86 119 32 11 33 12 9 12 -39 1 -76 35 -96 91 l-19 50 -14 -47z m54 -72 c11 -12 25 -21 32 -21 6 0 -3 -15 -22 -34 -19 -19 -34 -45 -35 -57 -1 -22 -2 -21 -14 7 -8 18 -26 41 -41 53 l-27 21 26 24 c14 13 29 37 33 53 l7 28 11 -27 c6 -14 20 -36 30 -47z"/>
           <path d="M1491 8094 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
