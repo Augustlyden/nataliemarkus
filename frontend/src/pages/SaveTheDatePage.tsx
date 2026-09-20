@@ -20,7 +20,7 @@ const SaveTheDatePage = () => {
 
         <p className={styles.date}>24 juli 2027</p>
 
-        <p className={styles.location}>Ängby Slott Bromma</p>
+        <p className={styles.location}>Bromma Kyrka <br /> Ängby Slott Bromma</p>
 
         <p className={styles.info}>Mer information kommer snart!</p>
         <Countdown />
