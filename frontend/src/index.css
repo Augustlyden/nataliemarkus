@@ -23,3 +23,33 @@ body, p {
   font-weight: 300;
   letter-spacing: 0.3px;
 }
+
+.version-switcher {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 20;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--blue-mid);
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.link, .span {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.25rem 0.5rem;
+}
+
+.link:hover {
+  background: var(--blue-pale);
+  color: var(--blue-deep);
+}
+
+.version-switcher a.active {
+  font-weight: 700;
+  color: var(--blue-deep);
+}
