@@ -2,9 +2,10 @@
 
 :root {
   --white: #FDFCF9;        /* varmvit bakgrund */
-  --green-light: #C9DCC9;  /* pastellgrön, ytor/sektioner */
-  --green-mid: #A9C5AE;    /* accent, linjer, ikoner */
-  --green-deep: #5E7A63;   /* text på ljus botten, rubriker */
+  --blue-pale: #E3EDF4;    /* mycket ljus, för stora sektionsbakgrunder */
+  --blue-light: #B7D0E1;   /* dammigt ljusblå, ytor/sektioner (din utgångspunkt) */
+  --blue-mid: #8FB0C9;     /* accent, linjer, ikoner */
+  --blue-deep: #4F6F8A;    /* text på ljus botten, rubriker */
   --gold: #D4C5A3;         /* liten lyxig accent, t.ex. divider */
   --text: #3A3A34;         /* brödtext, nästan svart men varmare */
   --font-title: 'Parisienne', serif;

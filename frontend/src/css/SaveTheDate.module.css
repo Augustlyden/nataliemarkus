@@ -20,7 +20,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1rem;
-  color: var(--green-deep);
+  color: var(--blue-deep);
   margin: 0 0 0.75rem;
   font-weight: 600;
 }
@@ -29,14 +29,14 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1rem;
-  color: var(--green-deep);
+  color: var(--blue-deep);
   margin: 0;
 }
 
 .names {
   font-family: var(--font-title);
   font-size: clamp(2.5rem, 6vw, 5rem);
-  color: var(--green-deep);
+  color: var(--blue-deep);
   margin: 0;
   font-weight: lighter;
 }
@@ -75,7 +75,7 @@
   aspect-ratio: 600 / 857; 
   pointer-events: none;
   z-index: 0;
-  fill: var(--green-deep);
+  fill: var(--blue-deep);
 }
 
 .topLeft {
@@ -122,7 +122,7 @@
 
 @media (min-width: 600px) {
   .background {
-    background: var(--green-mid);
+    background: var(--blue-light);
     min-height: 100vh;
   }
 
