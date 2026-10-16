@@ -13,7 +13,7 @@
 .number {
   font-family: Georgia, serif;
   font-size: 1.4rem;
-  color: #5E7A63;
+  color: var(--blue-deep);
   font-weight: 500;
 }
 
