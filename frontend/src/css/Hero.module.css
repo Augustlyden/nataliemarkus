@@ -1,0 +1,64 @@
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.welcomeImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 12px;
+}
+
+.welcomeText {
+  text-align: center;
+}
+
+.welcomeEyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  color: var(--blue-deep);
+}
+
+.divider {
+  display: block;
+  width: 72px;
+  height: 1.5px;
+  margin: 1rem auto;
+  background: var(--gold);
+}
+
+.osaBtn {
+  background-color: var(--blue-deep);
+}
+
+h2 {
+  color: var(--blue-deep);
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 2rem;
+  }
+
+  .welcomeText {
+    text-align: left;
+  }
+
+  .divider {
+    margin-left: 0;
+  }
+
+  .welcomeText {
+    width: 300px;
+  }
+}
