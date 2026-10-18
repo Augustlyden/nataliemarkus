@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--blue-deep);
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+}
+
+a:hover {
+  background-color: var(--blue-mid);
+}
