@@ -17,7 +17,13 @@ const Hero = ({ image }: HeroProps) => {
         <h2>Vi ska gifta oss</h2>
         <span className={styles.divider} />
         <p className={styles.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Med stor glädje och kärlek ser vi fram emot att få dela en av livets allra finaste dagar med er.
+          Den 24 juli 2027 säger vi ja till varandra och det skulle betyda så mycket att få fira denna speciella dag tillsammans med våra nära och kära.
+          Här har vi samlat all information inför vårt bröllop, så att ni kan se fram emot dagen precis lika mycket som vi gör.
+          <br />
+          Med kärlek,
+          <br />
+          Natalie & Markus ♡
         </p>
         <a href="#osa" className={styles.osaBtn}>OSA</a>
       </div>

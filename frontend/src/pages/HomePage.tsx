@@ -5,24 +5,19 @@ import VersionSwitcher from "../components/VersionSwitcher";
 import Hero from "../components/Hero";
 
 type Props = {
-  hero: string
+  hero: string;
+  plats: string;
 }
 
-const HomePage = ({ hero }: Props) => {
+const HomePage = ({ hero, plats }: Props) => {
   return (
     <>
       <Header />
       <section className={styles.hero} id="top">
-        {/* <img
-          className="hero__img"
-          src={image}
-          alt="Anna och Bo"
-          style={{ objectPosition: focus }}
-        /> */}
         <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
           <p className={styles.heroEyebrow}>Vi gifter oss</p>
-          <h1>Natalie & Markus</h1>
+          <h1>NATALIE <br /><span className={styles.span}>och</span><br /> MARKUS</h1>
           <span className={styles.heroDivider} />
           <p className={styles.heroDate}>24 juni 2027</p>
           <div className={styles.countdown}>
@@ -31,6 +26,34 @@ const HomePage = ({ hero }: Props) => {
         </div>
       </section>
       <Hero image={hero}/>
+
+      <section className={styles.platsContainer} id="plats">
+        <img className={styles.platsImage} src={plats} />
+        <div className={styles.platsText}>
+          <h2 className={styles.platsEyebrow}>Plats</h2>
+          <div className={styles.platsInfo}>
+            <div className={styles.divider}></div>
+            <div className={styles.li}>
+              <p>Vigsel</p>
+              <li>
+                <ul>Bromma Kyrka</ul>
+                <ul>Adress Gliavägen 100</ul>
+                <ul>Tid 15:00</ul>
+                <ul>Kommunikation busslinje 117 till busshållsplats Bromma Kyrka</ul>
+              </li>
+            </div>
+            <div className={styles.li}>
+              <p>Mottagning</p>
+              <li>
+                <ul>Ängby Slott</ul>
+                <ul>Adress Stora Ängby Allé 32-34</ul>
+                <ul>Tid 16:00</ul>
+                <ul>Kommunikation busslinje 113 till busshållsplats Runstensplan</ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
       <VersionSwitcher />
     </>
   );
