@@ -7,6 +7,7 @@ const Header = () => {
       <nav>
         <a href="#plats">Plats</a>
         <a href="#program">Program</a>
+        <a href="#detaljer">Detaljer</a>
         <a href="#osa" className={styles.osaBtn}>OSA</a>
       </nav>
     </header>
