@@ -23,6 +23,7 @@
   color: var(--blue-deep);
   margin: 0 0 0.75rem;
   font-weight: 600;
+  background: var(--white);
 }
 
 .text {
@@ -31,6 +32,7 @@
   font-size: 1rem;
   color: var(--blue-deep);
   margin: 0;
+  background: var(--white);
 }
 
 .names {
@@ -48,6 +50,7 @@
   font-size: 1.2rem;
   margin: 0;
   color: var(--text);
+  background: var(--white);
 }
 
 /* .date {
@@ -57,7 +60,7 @@
 .divider {
   display: block;
   width: 100px;
-  height: 1px;
+  height: 1.5px;
   background: var(--gold);
   margin: 1.25rem 0;
 }
@@ -66,6 +69,7 @@
   font-size: 1rem;
   color: var(--text);
   margin: 1rem 0 0;
+  background: var(--white);
 }
 
 .flowerDecoration {
