@@ -5,7 +5,7 @@
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .welcomeImage {
@@ -44,6 +44,10 @@ h2 {
   font-size: 40px;
 }
 
+.text {
+  margin: 2rem 1rem;
+}
+
 @media (min-width: 768px) {
   .welcome {
     grid-template-columns: 1fr 1fr;
@@ -63,5 +67,8 @@ h2 {
     width: 300px;
   }
 
+  .text {
+    margin: 1rem 0;
+  }
   
 }

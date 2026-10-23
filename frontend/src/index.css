@@ -15,7 +15,6 @@
 }
 
 * {
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -30,6 +29,10 @@ body, p {
   font-weight: 300;
   letter-spacing: 0.3px;
   background-color: var(--blue-pale);
+}
+
+body {
+  margin: 0;
 }
 
 .version-switcher {
