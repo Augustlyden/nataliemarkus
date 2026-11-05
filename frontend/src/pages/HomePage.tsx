@@ -5,6 +5,7 @@ import styles from "../css/HomePage.module.css";
 import Hero from "../components/Hero";
 import Flowers from "../components/Flowers";
 import { Program } from "../components/Program";
+import { Palettes } from "../components/Palettes";
 
 type Props = {
   hero: string;
@@ -67,6 +68,22 @@ const HomePage = ({ hero, plats }: Props) => {
       </section>
 
       <Program />
+
+      <section className={styles.colors} aria-labelledby="colors-title">
+        <div className={styles.colorsInner}>
+          <p className={styles.colorsEyebrow}>Klädkod</p>
+          <h2 id="colors-title" className={styles.colorsTitle}>Våra färger</h2>
+          <div className={styles.colorsDivider} aria-hidden="true" />
+          <p className={styles.colorsText}>
+            Vi ser gärna att ni bär någon av dessa färger på vår stora dag.
+            Välj den palett som passar er bäst.
+          </p>
+
+          <div className={styles.colorsCard}>
+            <Palettes />
+          </div>
+        </div>
+      </section>
 
       {/* <section className={styles.program} id="detaljer">
         <ul className="timeline">
