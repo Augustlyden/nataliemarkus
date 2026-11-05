@@ -7,7 +7,7 @@ import DiscoBall from '../assets/disco-ball.svg?react';
 import styles from '../css/Program.module.css';
 
 const events = [
-  { time: '14:00', title: 'Cermoni', Icon: Rings },
+  { time: '14:30', title: 'Cermoni', Icon: Rings },
   { time: '16:00', title: 'Mingel', Icon: Toast },
   { time: '18:00', title: 'Middag', Icon: Menu },
   { time: '20:00', title: 'Tårtskärning', Icon: Cake },
@@ -17,7 +17,7 @@ const events = [
 
 export const Program = () => {
   return (
-    <section className={styles.program}>
+    <section className={styles.program} id="detaljer">
       <ol className={styles.events}>
         {events.map(({ time, title, Icon }) => (
           <li key={title} className={styles.event}>
