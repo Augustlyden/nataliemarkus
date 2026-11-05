@@ -1,8 +1,11 @@
 import Header from "../components/Header";
 import Countdown from "../components/Countdown";
 import styles from "../css/HomePage.module.css";
-import VersionSwitcher from "../components/VersionSwitcher";
+/* import VersionSwitcher from "../components/VersionSwitcher"; */
 import Hero from "../components/Hero";
+import Flowers from "../components/Flowers";
+import { Program } from "../components/Program";
+import { Palettes } from "../components/Palettes";
 
 type Props = {
   hero: string;
@@ -27,34 +30,73 @@ const HomePage = ({ hero, plats }: Props) => {
       </section>
       <Hero image={hero}/>
 
-      <section className={styles.platsContainer} id="plats">
-        <img className={styles.platsImage} src={plats} />
-        <div className={styles.platsText}>
-          <h2 className={styles.platsEyebrow}>Plats</h2>
-          <div className={styles.platsInfo}>
-            <div className={styles.divider}></div>
-            <div className={styles.li}>
-              <p>Vigsel</p>
-              <li>
-                <ul>Bromma Kyrka</ul>
-                <ul>Adress Gliavägen 100</ul>
-                <ul>Tid 15:00</ul>
-                <ul>Kommunikation busslinje 117 till busshållsplats Bromma Kyrka</ul>
-              </li>
-            </div>
-            <div className={styles.li}>
-              <p>Mottagning</p>
-              <li>
-                <ul>Ängby Slott</ul>
-                <ul>Adress Stora Ängby Allé 32-34</ul>
-                <ul>Tid 16:00</ul>
-                <ul>Kommunikation busslinje 113 till busshållsplats Runstensplan</ul>
-              </li>
-            </div>
+      <section className={styles.plats} id="plats">
+        <Flowers className={`${styles.flower} ${styles.flowerTop}`}/>
+        <Flowers className={`${styles.flower} ${styles.flowerBottom}`} />
+
+        <div className={styles.platsContainer}>
+          <img className={styles.platsImage} src={plats} alt="Ängby Slott" />
+
+          <div className={styles.platsText}>
+            <h2 className={styles.platsEyebrow}>Plats</h2>
+
+            <article className={styles.event}>
+              <h3>Vigsel</h3>
+              <p className={styles.place}>Bromma Kyrka</p>
+              <dl>
+                <dt>Adress</dt><dd>Gliavägen 100</dd>
+                <dt>Tid</dt><dd>15:00</dd>
+                <dt>Hit tar du dig</dt><dd>Busslinje 117 till busshållsplats Bromma Kyrka</dd>
+              </dl>
+            </article>
+
+            <div className={styles.divider} />
+
+            <article className={styles.event}>
+              <h3>Mottagning</h3>
+              <p className={styles.place}>Ängby Slott</p>
+              <dl>
+                <dt>Adress</dt><dd>Stora Ängby Allé 32-34</dd>
+                <dt>Tid</dt><dd>16:00</dd>
+                <dt>Hit tar du dig</dt><dd>Busslinje 113 till busshållsplats Runstensplan</dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+        <Flowers className={`${styles.flower} ${styles.flowerTopLeft}`}/>
+        <Flowers className={`${styles.flower} ${styles.flowerBottomLeft}`} />
+      </section>
+
+      <Program />
+
+      <section className={styles.colors} aria-labelledby="colors-title">
+        <div className={styles.colorsInner}>
+          <p className={styles.colorsEyebrow}>Klädkod</p>
+          <h2 id="colors-title" className={styles.colorsTitle}>Våra färger</h2>
+          <div className={styles.colorsDivider} aria-hidden="true" />
+          <p className={styles.colorsText}>
+            Vi ser gärna att ni bär någon av dessa färger på vår stora dag.
+            Välj den palett som passar er bäst.
+          </p>
+
+          <div className={styles.colorsCard}>
+            <Palettes />
           </div>
         </div>
       </section>
-      <VersionSwitcher />
+
+      {/* <section className={styles.program} id="detaljer">
+        <ul className="timeline">
+          {events.map(e => (
+            <li key={e.title} className="event">
+              <Icon />
+              <p className="event-time">{e.time}</p>
+              <h3 className="event-title">{e.title}</h3>
+            </li>
+          ))}
+        </ul>
+      </section> */}
+      {/* <VersionSwitcher /> */}
     </>
   );
 };

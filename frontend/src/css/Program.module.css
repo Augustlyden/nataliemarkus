@@ -1,0 +1,56 @@
+/* .program {
+  background-image: url('/images/blommor-bakgrund.jpg') center / cover no-repeat;
+  padding: 4rem 1rem;
+} */
+.program {
+  position: relative;
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  background-image: url('/images/blommor-bakgrund.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-content: center;
+}
+
+.events {
+  list-style: none;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 60rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgba(253, 252, 249, 0.75);
+  border-radius: 1rem;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--blue-deep);
+}
+
+.eventIcon {
+  /* width: 56px;
+  height: 56px; */
+  width: clamp(64px, 10vw, 120px);
+  height: auto;
+  aspect-ratio: 1;
+}
+
+.eventTid {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+/* @media (max-width: 600px) {
+  .program {
+    align-content: baseline;
+    min-height: 100vh;
+  }
+} */
