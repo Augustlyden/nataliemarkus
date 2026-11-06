@@ -243,6 +243,11 @@
   padding: 2rem 1rem;
   box-shadow: 0 8px 30px rgba(183, 208, 225, 0.25);
 }
+
+.osa {
+  background: var(--blue-pale);
+}
+
 @media (max-width: 600px) {
   .flower { width: 110px; opacity: 0.6; }
 }

@@ -1,11 +1,11 @@
 import Header from "../components/Header";
 import Countdown from "../components/Countdown";
 import styles from "../css/HomePage.module.css";
-/* import VersionSwitcher from "../components/VersionSwitcher"; */
 import Hero from "../components/Hero";
 import Flowers from "../components/Flowers";
 import { Program } from "../components/Program";
 import { Palettes } from "../components/Palettes";
+import { OsaForm } from "../components/OsaForm";
 
 type Props = {
   hero: string;
@@ -22,7 +22,7 @@ const HomePage = ({ hero, plats }: Props) => {
           <p className={styles.heroEyebrow}>Vi gifter oss</p>
           <h1>NATALIE <br /><span className={styles.span}>och</span><br /> MARKUS</h1>
           <span className={styles.heroDivider} />
-          <p className={styles.heroDate}>24 juni 2027</p>
+          <p className={styles.heroDate}>24 juli 2027</p>
           <div className={styles.countdown}>
             <Countdown />
           </div>
@@ -85,18 +85,9 @@ const HomePage = ({ hero, plats }: Props) => {
         </div>
       </section>
 
-      {/* <section className={styles.program} id="detaljer">
-        <ul className="timeline">
-          {events.map(e => (
-            <li key={e.title} className="event">
-              <Icon />
-              <p className="event-time">{e.time}</p>
-              <h3 className="event-title">{e.title}</h3>
-            </li>
-          ))}
-        </ul>
-      </section> */}
-      {/* <VersionSwitcher /> */}
+      <section className={styles.osa} id="osa">
+        <OsaForm />
+      </section>
     </>
   );
 };
