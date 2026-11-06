@@ -76,7 +76,7 @@ const HomePage = ({ hero, plats }: Props) => {
           <div className={styles.colorsDivider} aria-hidden="true" />
           <p className={styles.colorsText}>
             Vi ser gärna att ni bär någon av dessa färger på vår stora dag.
-            Välj den palett som passar er bäst.
+            Temat är somrig elegans. Kvinnor får gärna bära långklänning eller långkjol och män får gärna bära svart kostym. Vi vill att ni ska känna er bekväma och fina!
           </p>
 
           <div className={styles.colorsCard}>
