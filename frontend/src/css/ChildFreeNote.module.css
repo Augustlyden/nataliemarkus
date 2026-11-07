@@ -1,0 +1,27 @@
+.note {
+  max-width: 420px;
+  margin-block: 1.5rem;
+  margin-inline: auto;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  color: var(--blue-deep);
+  background: rgba(255, 255, 255, 0.6);
+  border-top: 1.5px solid var(--gold);
+  border-bottom: 1.5px solid var(--gold);
+}
+ 
+.label {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-subtitle);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+ 
+.text {
+  margin: 0;
+  font-family: var(--font-text, sans-serif);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
