@@ -61,7 +61,7 @@
 .plats {
   position: relative;
   padding: 4rem 1.5rem;
-  background-color: var(--blue-deep);
+  background-color: var(--blue-pale);
   overflow: hidden;
 }
 
@@ -88,7 +88,7 @@
   font-family: var(--font-title);
   font-weight: 400;
   font-size: clamp(2.5rem, 7vw, 3.5rem);
-  color: var(--white);
+  color: var(--blue-deep);
   text-align: center;
   margin: 0 0 2rem;
 }
@@ -103,15 +103,15 @@
   font-size: 0.85rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--blue-mid);
   margin: 0 0 0.5rem;
-  background-color: var(--blue-deep);
+  background-color: var(--blue-pale);
 }
 
 .place {
   font-family: var(--font-title);
   font-size: 1.8rem;
-  color: var(--white);
+  color: var(--blue-deep);
   margin: 0 0 1rem;
 }
 
@@ -133,7 +133,7 @@
 .event dd {
   margin: 0;
   font-size: 1.15rem;
-  color: var(--white);
+  color: var(--blue-deep);
 }
 
 .divider {
@@ -147,7 +147,7 @@
   --size: clamp(90px, 24vw, 320px);
   --offset: calc(var(--size) * -0.1); 
   position: absolute;
-  color: var(--white);
+  color: var(--blue-deep  );
   width: clamp(120px, 24vw, 320px);
   height: auto;
   pointer-events: none;
