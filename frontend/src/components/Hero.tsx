@@ -1,4 +1,5 @@
 import styles from '../css/Hero.module.css';
+import { ChildFreeNote } from './ChildFreeNote';
 
 interface HeroProps {
     image: string;
@@ -25,6 +26,7 @@ const Hero = ({ image }: HeroProps) => {
           <br />
           Natalie & Markus ♡
         </p>
+        <ChildFreeNote />
         <a href="#osa" className={styles.osaBtn}>OSA</a>
       </div>
     </section>

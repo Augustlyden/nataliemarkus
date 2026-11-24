@@ -1,41 +1,41 @@
 import styles from "../css/OsaForm.module.css";
 import { useState, type ChangeEvent } from "react";
+import { ChildFreeNote } from "./ChildFreeNote";
 
 interface ResponseData {
   name: string;
-  attending: Response;
+  attending: YesNo;
   dietaryRestrictions: string;
   guests: number;
-  speach: Response;
+  speech: YesNo;
   relation: string;
-  lenght: string;
-  speachInfo: string;
+  length: string;
+  speechInfo: string;
   message: string;
 }
 
-const intialResponse: ResponseData = {
+const initialResponse: ResponseData = {
   name: "",
   attending: "",
   dietaryRestrictions: "",
   guests: 1,
-  speach: "",
+  speech: "",
   relation: "",
-  lenght: "",
-  speachInfo: "",
+  length: "",
+  speechInfo: "",
   message: "",
 };
 
-type Response = "ja" | "nej" | "";
+type YesNo = "yes" | "no" | "";
 
 export const OsaForm = () => {
-  const [response, setResponse] = useState<ResponseData>(intialResponse);
+  const [response, setResponse] = useState<ResponseData>(initialResponse);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setResponse((prev) => ({
       ...prev,
       [name]: name === "guests" ? Number(value) : value,
-      [name]: name === "attending" ? value as Response : prev.attending,
     }));
   };
 
@@ -51,6 +51,9 @@ export const OsaForm = () => {
       </p>
 
       <div className={styles.divider} />
+      <ChildFreeNote>
+        Vi älskar era små, men har bestämt oss för att vår stora dag ska bli en fest för de vuxna. Därför ber vi er att lämna barnen hemma den här gången. Se det som en chans till en kväll helt för er själva!
+      </ChildFreeNote>
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.field}>
@@ -73,8 +76,8 @@ export const OsaForm = () => {
               <input
                 type="radio"
                 name="attending"
-                value="ja"
-                checked={response.attending === "ja"}
+                value="yes"
+                checked={response.attending === "yes"}
                 onChange={handleChange}
                 required
               />
@@ -84,15 +87,15 @@ export const OsaForm = () => {
               <input
                 type="radio"
                 name="attending"
-                value="nej"
-                checked={response.attending === "nej"}
+                value="no"
+                checked={response.attending === "no"}
                 onChange={handleChange}
               />
               <span>Nej, jag kan tyvärr inte</span>
             </label>
           </div>
         </fieldset>
-        {response.attending === "ja" && (
+        {response.attending === "yes" && (
           <>
             <div className={styles.field}>
               <label htmlFor="guests">Antal personer</label>
@@ -123,16 +126,16 @@ export const OsaForm = () => {
               <div className={styles.choices}>
                 {(
                   [
-                    ["ja", "Ja, gärna"],
-                    ["nej", "Nej tack"],
+                    ["yes", "Ja, gärna"],
+                    ["no", "Nej tack"],
                   ] as const
                 ).map(([value, label]) => (
                   <label key={value} className={styles.choice}>
                     <input
                       type="radio"
-                      name="speach"
+                      name="speech"
                       value={value}
-                      checked={response.speach === value}
+                      checked={response.speech === value}
                       onChange={handleChange}
                       required
                     />
@@ -142,7 +145,7 @@ export const OsaForm = () => {
               </div>
             </fieldset>
  
-            {response.speach === "ja" && (
+            {response.speech === "yes" && (
               <>
                 <p className={styles.hint}>
                   Berätta gärna lite om talet så hjälper det oss att planera kvällen.
@@ -165,7 +168,7 @@ export const OsaForm = () => {
                   <select
                     id="length"
                     name="length"
-                    value={response.lenght}
+                    value={response.length}
                     onChange={handleChange}
                   >
                     <option value="">Välj…</option>
@@ -176,12 +179,12 @@ export const OsaForm = () => {
                 </div>
  
                 <div className={styles.field}>
-                  <label htmlFor="speachInfo">Något vi bör veta? (valfritt)</label>
+                  <label htmlFor="speechInfo">Något vi bör veta? (valfritt)</label>
                   <textarea
-                    id="speachInfo"
-                    name="speachInfo"
+                    id="speechInfo"
+                    name="speechInfo"
                     rows={3}
-                    value={response.speachInfo}
+                    value={response.speechInfo}
                     onChange={handleChange}
                   />
                 </div>
